@@ -27,7 +27,7 @@ describe Deck do
 
     new_deck.shuffle
 
-    expect(new_deck.cards).wont_be_same_as(before_shuffle)
+    expect(new_deck.cards).wont_equal(before_shuffle)
   end
   it "has a draw method that returns a card and removes it from the deck" do
     new_deck = Deck.new
